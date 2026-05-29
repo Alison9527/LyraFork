@@ -12,7 +12,9 @@
 				"Engine",
 				"ModularGameplayActors",
 				"CommonGame",
-				"ModularGameplay"
+				"ModularGameplay",
+				"CoreUObject",
+				"GameplayAbilities"
 			]
 		}
 	],
