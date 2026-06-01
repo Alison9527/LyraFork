@@ -1,25 +1,36 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "UObject/Interface.h"
+
 #include "LyraAbilitySourceInterface.generated.h"
 
-// This class does not need to be modified.
-UINTERFACE(MinimalAPI)
+class UObject;
+class UPhysicalMaterial;
+struct FGameplayTagContainer;
+
+/** Base interface for anything acting as a ability calculation source */
+UINTERFACE()
 class ULyraAbilitySourceInterface : public UInterface
 {
-	GENERATED_BODY()
+	GENERATED_UINTERFACE_BODY()
 };
 
-/**
- * 
- */
-class LYRAGAME_API ILyraAbilitySourceInterface
+class ILyraAbilitySourceInterface
 {
-	GENERATED_BODY()
+	GENERATED_IINTERFACE_BODY()
 
-	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
-public:
+	/**
+	 * Compute the multiplier for effect falloff with distance
+	 * 
+	 * @param Distance			Distance from source to target for ability calculations (distance bullet traveled for a gun, etc...)
+	 * @param SourceTags		Aggregated Tags from the source
+	 * @param TargetTags		Aggregated Tags currently on the target
+	 * 
+	 * @return Multiplier to apply to the base attribute value due to distance
+	 */
+	virtual float GetDistanceAttenuation(float Distance, const FGameplayTagContainer* SourceTags = nullptr, const FGameplayTagContainer* TargetTags = nullptr) const = 0;
+
+	virtual float GetPhysicalMaterialAttenuation(const UPhysicalMaterial* PhysicalMaterial, const FGameplayTagContainer* SourceTags = nullptr, const FGameplayTagContainer* TargetTags = nullptr) const = 0;
 };

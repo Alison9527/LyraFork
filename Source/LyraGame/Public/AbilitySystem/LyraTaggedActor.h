@@ -1,26 +1,36 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "GameplayTagAssetInterface.h"
+#include "GameplayTagContainer.h"
+
 #include "LyraTaggedActor.generated.h"
 
+// An actor that implements the gameplay tag asset interface
 UCLASS()
-class LYRAGAME_API ALyraTaggedActor : public AActor
+class ALyraTaggedActor : public AActor, public IGameplayTagAssetInterface
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ALyraTaggedActor();
+
+public:
+
+	ALyraTaggedActor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
+
+	//~IGameplayTagAssetInterface
+	virtual void GetOwnedGameplayTags(FGameplayTagContainer& TagContainer) const override;
+	//~End of IGameplayTagAssetInterface
+
+	//~UObject interface
+#if WITH_EDITOR
+	virtual bool CanEditChange(const FProperty* InProperty) const override;
+#endif
+	//~End of UObject interface
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
+	// Gameplay-related tags associated with this actor
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Actor)
+	FGameplayTagContainer StaticGameplayTags;
 };
+

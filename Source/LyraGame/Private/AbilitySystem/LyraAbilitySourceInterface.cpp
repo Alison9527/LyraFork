@@ -2,5 +2,8 @@
 
 
 #include "AbilitySystem/LyraAbilitySourceInterface.h"
+#include UE_INLINE_GENERATED_CPP_BY_NAME(LyraAbilitySourceInterface)
 
-// Add default functionality here for any ILyraAbilitySourceInterface functions that are not pure virtual.
+ULyraAbilitySourceInterface::ULyraAbilitySourceInterface(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
+{}

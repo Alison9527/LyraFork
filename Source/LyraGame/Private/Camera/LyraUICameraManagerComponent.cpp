@@ -2,33 +2,66 @@
 
 
 #include "Camera/LyraUICameraManagerComponent.h"
+#include "GameFramework/HUD.h"
+#include "GameFramework/PlayerController.h"
+#include "LyraPlayerCameraManager.h"
 
-// Sets default values for this component's properties
+#include UE_INLINE_GENERATED_CPP_BY_NAME(LyraUICameraManagerComponent)
+
+class AActor;
+class FDebugDisplayInfo;
+
+ULyraUICameraManagerComponent* ULyraUICameraManagerComponent::GetComponent(APlayerController* PC)
+{
+	if (PC != nullptr)
+	{
+		if (ALyraPlayerCameraManager* PCCamera = Cast<ALyraPlayerCameraManager>(PC->PlayerCameraManager))
+		{
+			return PCCamera->GetUICameraComponent();
+		}
+	}
+
+	return nullptr;
+}
+
 ULyraUICameraManagerComponent::ULyraUICameraManagerComponent()
 {
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
+	bWantsInitializeComponent = true;
 
-	// ...
+	if (!HasAnyFlags(RF_ClassDefaultObject))
+	{
+		// Register "showdebug" hook.
+		if (!IsRunningDedicatedServer())
+		{
+			AHUD::OnShowDebugInfo.AddUObject(this, &ThisClass::OnShowDebugInfo);
+		}
+	}
 }
 
-
-// Called when the game starts
-void ULyraUICameraManagerComponent::BeginPlay()
+void ULyraUICameraManagerComponent::InitializeComponent()
 {
-	Super::BeginPlay();
-
-	// ...
-	
+	Super::InitializeComponent();
 }
 
-
-// Called every frame
-void ULyraUICameraManagerComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+void ULyraUICameraManagerComponent::SetViewTarget(AActor* InViewTarget, FViewTargetTransitionParams TransitionParams)
 {
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+	TGuardValue<bool> UpdatingViewTargetGuard(bUpdatingViewTarget, true);
 
-	// ...
+	ViewTarget = InViewTarget;
+	CastChecked<ALyraPlayerCameraManager>(GetOwner())->SetViewTarget(ViewTarget, TransitionParams);
 }
+
+bool ULyraUICameraManagerComponent::NeedsToUpdateViewTarget() const
+{
+	return false;
+}
+
+void ULyraUICameraManagerComponent::UpdateViewTarget(struct FTViewTarget& OutVT, float DeltaTime)
+{
+}
+
+void ULyraUICameraManagerComponent::OnShowDebugInfo(AHUD* HUD, UCanvas* Canvas, const FDebugDisplayInfo& DisplayInfo, float& YL, float& YPos)
+{
+}
+
 

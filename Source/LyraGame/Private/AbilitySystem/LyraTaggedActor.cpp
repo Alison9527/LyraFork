@@ -2,26 +2,30 @@
 
 
 #include "AbilitySystem/LyraTaggedActor.h"
+#include "UObject/UnrealType.h"
 
-// Sets default values
-ALyraTaggedActor::ALyraTaggedActor()
+#include UE_INLINE_GENERATED_CPP_BY_NAME(LyraTaggedActor)
+
+ALyraTaggedActor::ALyraTaggedActor(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
 }
 
-// Called when the game starts or when spawned
-void ALyraTaggedActor::BeginPlay()
+void ALyraTaggedActor::GetOwnedGameplayTags(FGameplayTagContainer& TagContainer) const
 {
-	Super::BeginPlay();
-	
+	TagContainer.AppendTags(StaticGameplayTags);
 }
 
-// Called every frame
-void ALyraTaggedActor::Tick(float DeltaTime)
+#if WITH_EDITOR
+bool ALyraTaggedActor::CanEditChange(const FProperty* InProperty) const
 {
-	Super::Tick(DeltaTime);
+	// Prevent editing of the other tags property
+	if (InProperty->GetFName() == GET_MEMBER_NAME_CHECKED(AActor, Tags))
+	{
+		return false;
+	}
 
+	return Super::CanEditChange(InProperty);
 }
+#endif
 
