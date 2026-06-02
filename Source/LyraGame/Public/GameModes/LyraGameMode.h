@@ -1,12 +1,25 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "ModularGameMode.h"
+
 #include "LyraGameMode.generated.h"
 
 #define UE_API LYRAGAME_API
+
+class AActor;
+class AController;
+class AGameModeBase;
+class APawn;
+class APlayerController;
+class UClass;
+class ULyraExperienceDefinition;
+class ULyraPawnData;
+class UObject;
+struct FFrame;
+struct FPrimaryAssetId;
+enum class ECommonSessionOnlineMode : uint8;
 
 /**
  * Post login event, triggered when a player or bot joins the game as well as after seamless and non seamless travel
@@ -26,7 +39,11 @@ class ALyraGameMode : public AModularGameModeBase
 	GENERATED_BODY()
 
 public:
+
 	UE_API ALyraGameMode(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
+
+	UFUNCTION(BlueprintCallable, Category = "Lyra|Pawn")
+	UE_API const ULyraPawnData* GetPawnDataForController(const AController* InController) const;
 
 	//~AGameModeBase interface
 	UE_API virtual void InitGame(const FString& MapName, const FString& Options, FString& ErrorMessage) override;
@@ -43,12 +60,30 @@ public:
 	UE_API virtual void FailedToRestartPlayer(AController* NewPlayer) override;
 	//~End of AGameModeBase interface
 
+	// Restart (respawn) the specified player or bot next frame
+	// - If bForceReset is true, the controller will be reset this frame (abandoning the currently possessed pawn, if any)
+	UFUNCTION(BlueprintCallable)
+	UE_API void RequestPlayerRestartNextFrame(AController* Controller, bool bForceReset = false);
+
 	// Agnostic version of PlayerCanRestart that can be used for both player bots and players
 	UE_API virtual bool ControllerCanRestart(AController* Controller);
 
-protected:
+	// Delegate called on player initialization, described above 
+	FOnLyraGameModePlayerInitialized OnGameModePlayerInitialized;
+
+protected:	
+	UE_API void OnExperienceLoaded(const ULyraExperienceDefinition* CurrentExperience);
+	UE_API bool IsExperienceLoaded() const;
+
+	UE_API void OnMatchAssignmentGiven(FPrimaryAssetId ExperienceId, const FString& ExperienceIdSource);
 
 	UE_API void HandleMatchAssignmentIfNotExpectingOne();
-	
-	
+
+	UE_API bool TryDedicatedServerLogin();
+	UE_API void HostDedicatedServerMatch(ECommonSessionOnlineMode OnlineMode);
+
+	UFUNCTION()
+	UE_API void OnUserInitializedForDedicatedServer(const UCommonUserInfo* UserInfo, bool bSuccess, FText Error, ECommonUserPrivilege RequestedPrivilege, ECommonUserOnlineContext OnlineContext);
 };
+
+#undef UE_API

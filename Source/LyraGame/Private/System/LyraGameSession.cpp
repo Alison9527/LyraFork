@@ -1,5 +1,28 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#include "LyraGameSession.h"
+
+#include UE_INLINE_GENERATED_CPP_BY_NAME(LyraGameSession)
 
 
-#include "System/LyraGameSession.h"
+ALyraGameSession::ALyraGameSession(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
+{
+}
+
+bool ALyraGameSession::ProcessAutoLogin()
+{
+	// This is actually handled in LyraGameMode::TryDedicatedServerLogin
+	return true;
+}
+
+void ALyraGameSession::HandleMatchHasStarted()
+{
+	Super::HandleMatchHasStarted();
+}
+
+void ALyraGameSession::HandleMatchHasEnded()
+{
+	Super::HandleMatchHasEnded();
+}
 
