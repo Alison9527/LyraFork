@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraWeaponInstance.h"
-
+#include "Weapons/LyraWeaponInstance.h"
 #include "GameFramework/Pawn.h"
 #include "Engine/World.h"
 #include "Math/UnrealMathUtility.h"

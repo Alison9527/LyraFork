@@ -1,9 +1,9 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraBotCheats.h"
-#include "Engine/World.h"
+#include "Development/LyraBotCheats.h"
 #include "GameFramework/CheatManagerDefines.h"
 #include "GameModes/LyraBotCreationComponent.h"
+#include "Engine/World.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraBotCheats)
 

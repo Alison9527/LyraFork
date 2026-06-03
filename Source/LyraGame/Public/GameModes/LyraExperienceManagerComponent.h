@@ -2,9 +2,11 @@
 
 #pragma once
 
+#include "LoadingProcessInterface.h"
+#include "LoadingProcessInterface.h"
+#include "LoadingProcessInterface.h"
 #include "Components/GameStateComponent.h"
 #include "LoadingProcessInterface.h"
-
 #include "LyraExperienceManagerComponent.generated.h"
 
 #define UE_API LYRAGAME_API

@@ -10,6 +10,7 @@
 #include "GameplayEffectExtension.h"
 #include "Messages/LyraVerbMessage.h"
 #include "GameFramework/GameplayMessageSubsystem.h"
+#include "LyraGameplayTags.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraHealthSet)
 

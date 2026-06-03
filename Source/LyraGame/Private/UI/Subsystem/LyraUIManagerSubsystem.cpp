@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraUIManagerSubsystem.h"
-
+#include "UI/Subsystem/LyraUIManagerSubsystem.h"
 #include "CommonLocalPlayer.h"
 #include "Engine/GameInstance.h"
 #include "GameFramework/HUD.h"

@@ -1,8 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "IndicatorLayer.h"
-
-#include "SActorCanvas.h"
+#include "UI/IndicatorSystem/IndicatorLayer.h"
+#include "UI/IndicatorSystem/SActorCanvas.h"
 #include "Widgets/Layout/SBox.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(IndicatorLayer)

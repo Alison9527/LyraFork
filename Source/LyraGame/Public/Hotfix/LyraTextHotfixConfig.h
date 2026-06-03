@@ -3,9 +3,9 @@
 #pragma once
 
 #include "Engine/DeveloperSettings.h"
+#include "Internationalization/PolyglotTextData.h"
 #include "LyraTextHotfixConfig.generated.h"
 
-struct FPolyglotTextData;
 struct FPropertyChangedEvent;
 
 /**

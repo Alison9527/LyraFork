@@ -38,11 +38,11 @@ public class LyraGame : ModuleRules
 				"GameFeatures",
 				"SignificanceManager",
 				"Hotfix",
-				// "CommonLoadingScreen",
+				"CommonLoadingScreen",
 				"Niagara",
-				// "AsyncMixin",
+				"AsyncMixin",
 				"ControlFlows",
-				"PropertyPath"
+				"PropertyPath", "CommonLoadingScreen", "CommonLoadingScreen", "CommonLoadingScreen"
 			}
 		);
 
@@ -61,19 +61,19 @@ public class LyraGame : ModuleRules
 				"UMG",
 				"CommonUI",
 				"CommonInput",
-				// "GameSettings",
-				// "CommonGame",
-				// "CommonUser",
-				// "GameSubtitles",
-				// "GameplayMessageRuntime",
-				// "AudioMixer",
+				"GameSettings",
+				"CommonGame",
+				"CommonUser",
+				"GameSubtitles",
+				"GameplayMessageRuntime",
+				"AudioMixer",
 				"NetworkReplayStreaming",
-				// "UIExtension",
+				"UIExtension",
 				"ClientPilot",
 				"AudioModulation",
 				"EngineSettings",
 				"DTLSHandlerComponent",
-				"Json",
+				"Json", "GameplayMessageRuntime", "GameplayMessageRuntime",
 			}
 		);
 

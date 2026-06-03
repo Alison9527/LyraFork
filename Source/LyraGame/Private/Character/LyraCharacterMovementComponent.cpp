@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "Character/LyraCharacterMovementComponent.h"
 #include "AbilitySystemComponent.h"
@@ -7,6 +6,8 @@
 #include "Components/CapsuleComponent.h"
 #include "Engine/World.h"
 #include "GameFramework/Character.h"
+
+#include UE_INLINE_GENERATED_CPP_BY_NAME(LyraCharacterMovementComponent)
 
 UE_DEFINE_GAMEPLAY_TAG(TAG_Gameplay_MovementStopped, "Gameplay.MovementStopped");
 

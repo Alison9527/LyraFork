@@ -3,12 +3,12 @@
 
 #include "Camera/LyraCameraMode_ThirdPerson.h"
 #include "Camera/LyraCameraMode.h"
+#include "Camera/LyraCameraAssistInterface.h"
 #include "Components/PrimitiveComponent.h"
 #include "Camera/LyraPenetrationAvoidanceFeeler.h"
 #include "Curves/CurveVector.h"
 #include "Engine/Canvas.h"
 #include "GameFramework/CameraBlockingVolume.h"
-#include "LyraCameraAssistInterface.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/Character.h"
 #include "Math/RotationMatrix.h"

@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "CustomSettings/LyraSettingValueDiscrete_PerfStat.h"
+#include "Settings/LyraSettingValueDiscrete_PerfStat.h"
 #include "EditCondition/WhenPlayingAsPrimaryPlayer.h"
 #include "GameSettingCollection.h"
 #include "GameSettingValueDiscreteDynamic.h"

@@ -1,10 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "NativeGameplayTags.h"
+
 #include "LyraCharacterMovementComponent.generated.h"
 
 #define UE_API LYRAGAME_API
@@ -48,7 +48,7 @@ UCLASS(MinimalAPI, Config = Game)
 class ULyraCharacterMovementComponent : public UCharacterMovementComponent
 {
 	GENERATED_BODY()
-	
+
 public:
 
 	UE_API ULyraCharacterMovementComponent(const FObjectInitializer& ObjectInitializer);

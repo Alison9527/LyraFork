@@ -1,8 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSettingAction_SafeZoneEditor.h"
-
-#include "DataSource/GameSettingDataSource.h"
+#include "Settings/CustomSettings/LyraSettingAction_SafeZoneEditor.h"
 #include "Player/LyraLocalPlayer.h"
 #include "Settings/LyraGameSettingRegistry.h"
 #include "Widgets/Layout/SSafeZone.h"

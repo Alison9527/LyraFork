@@ -1,8 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "GameplayMessageProcessor.h"
-
+#include "Messages/GameplayMessageProcessor.h"
 #include "Engine/World.h"
+#include "GameFramework/GameplayMessageSubsystem.h"
 #include "GameFramework/GameStateBase.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(GameplayMessageProcessor)

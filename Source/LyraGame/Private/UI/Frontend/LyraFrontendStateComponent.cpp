@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraFrontendStateComponent.h"
-
+#include "UI/Frontend/LyraFrontendStateComponent.h"
 #include "CommonGameInstance.h"
 #include "CommonSessionSubsystem.h"
 #include "CommonUserSubsystem.h"

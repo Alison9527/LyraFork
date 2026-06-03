@@ -1,17 +1,17 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "Teams/LyraTeamSubsystem.h"
-
+#include "Teams/LyraTeamAgentInterface.h"
+#include "Teams/LyraTeamCheats.h"
+#include "Teams/LyraTeamPrivateInfo.h"
+#include "Teams/LyraTeamPublicInfo.h"
+#include "Teams/LyraTeamInfoBase.h"
 #include "AbilitySystemGlobals.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/Pawn.h"
 #include "LyraLogChannels.h"
-#include "LyraTeamAgentInterface.h"
-#include "LyraTeamCheats.h"
-#include "LyraTeamPrivateInfo.h"
-#include "LyraTeamPublicInfo.h"
 #include "Player/LyraPlayerState.h"
-#include "Teams/LyraTeamInfoBase.h"
+
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraTeamSubsystem)
 

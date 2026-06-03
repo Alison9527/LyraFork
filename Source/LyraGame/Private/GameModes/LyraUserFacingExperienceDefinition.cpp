@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraUserFacingExperienceDefinition.h"
+#include "GameModes/LyraUserFacingExperienceDefinition.h"
 #include "CommonSessionSubsystem.h"
 #include "Containers/UnrealString.h"
 #include "UObject/NameTypes.h"

@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraWeaponUserInterface.h"
-
+#include "UI/Weapons/LyraWeaponUserInterface.h"
 #include "Equipment/LyraEquipmentManagerComponent.h"
 #include "GameFramework/Pawn.h"
 #include "Weapons/LyraWeaponInstance.h"

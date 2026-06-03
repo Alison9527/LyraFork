@@ -1,9 +1,9 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraTeamCreationComponent.h"
+#include "Teams/LyraTeamCreationComponent.h"
+#include "Teams/LyraTeamPublicInfo.h"
+#include "Teams/LyraTeamPrivateInfo.h"
 #include "GameModes/LyraExperienceManagerComponent.h"
-#include "LyraTeamPublicInfo.h"
-#include "LyraTeamPrivateInfo.h"
 #include "Player/LyraPlayerState.h"
 #include "Engine/World.h"
 #include "GameModes/LyraGameMode.h"
@@ -11,6 +11,9 @@
 #if WITH_EDITOR
 #include "Misc/DataValidation.h"
 #endif
+
+#include "GenericTeamAgentInterface.h"
+#include "Teams/LyraTeamAgentInterface.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraTeamCreationComponent)
 

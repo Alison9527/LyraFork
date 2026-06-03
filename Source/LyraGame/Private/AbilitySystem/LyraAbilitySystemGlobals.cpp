@@ -2,7 +2,7 @@
 
 
 #include "AbilitySystem/LyraAbilitySystemGlobals.h"
-#include "LyraGameplayEffectContext.h"
+#include "AbilitySystem/LyraGameplayEffectContext.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraAbilitySystemGlobals)
 

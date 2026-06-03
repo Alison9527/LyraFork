@@ -1,9 +1,9 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "Components/GameFrameworkComponent.h"
+
 #include "LyraHealthComponent.generated.h"
 
 #define UE_API LYRAGAME_API
@@ -42,7 +42,7 @@ UCLASS(MinimalAPI, Blueprintable, Meta=(BlueprintSpawnableComponent))
 class ULyraHealthComponent : public UGameFrameworkComponent
 {
 	GENERATED_BODY()
-	
+
 public:
 
 	UE_API ULyraHealthComponent(const FObjectInitializer& ObjectInitializer);
@@ -52,8 +52,8 @@ public:
 	static ULyraHealthComponent* FindHealthComponent(const AActor* Actor) { return (Actor ? Actor->FindComponentByClass<ULyraHealthComponent>() : nullptr); }
 
 	// Initialize the component using an ability system component.
-	// UFUNCTION(BlueprintCallable, Category = "Lyra|Health")
-	// UE_API void InitializeWithAbilitySystem(ULyraAbilitySystemComponent* InASC);
+	UFUNCTION(BlueprintCallable, Category = "Lyra|Health")
+	UE_API void InitializeWithAbilitySystem(ULyraAbilitySystemComponent* InASC);
 
 	// Uninitialize the component, clearing any references to the ability system.
 	UFUNCTION(BlueprintCallable, Category = "Lyra|Health")
@@ -119,13 +119,13 @@ protected:
 
 protected:
 
-	// // Ability system used by this component.
-	// UPROPERTY()
-	// TObjectPtr<ULyraAbilitySystemComponent> AbilitySystemComponent;
-	//
-	// // Health set used by this component.
-	// UPROPERTY()
-	// TObjectPtr<const ULyraHealthSet> HealthSet;
+	// Ability system used by this component.
+	UPROPERTY()
+	TObjectPtr<ULyraAbilitySystemComponent> AbilitySystemComponent;
+
+	// Health set used by this component.
+	UPROPERTY()
+	TObjectPtr<const ULyraHealthSet> HealthSet;
 
 	// Replicated state used to handle dying.
 	UPROPERTY(ReplicatedUsing = OnRep_DeathState)

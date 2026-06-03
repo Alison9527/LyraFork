@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "IndicatorDescriptor.h"
-
+#include "UI/IndicatorSystem/IndicatorDescriptor.h"
 #include "Engine/LocalPlayer.h"
 #include "SceneView.h"
 #include "UI/IndicatorSystem/LyraIndicatorManagerComponent.h"

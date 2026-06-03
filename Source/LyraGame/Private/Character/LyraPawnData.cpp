@@ -1,5 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "Character/LyraPawnData.h"
 
@@ -9,6 +8,7 @@ ULyraPawnData::ULyraPawnData(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
 	PawnClass = nullptr;
-	// InputConfig = nullptr;
-	// DefaultCameraMode = nullptr;
+	InputConfig = nullptr;
+	DefaultCameraMode = nullptr;
 }
+

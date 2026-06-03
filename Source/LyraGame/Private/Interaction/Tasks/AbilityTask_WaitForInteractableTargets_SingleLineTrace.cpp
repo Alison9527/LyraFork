@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "AbilityTask_WaitForInteractableTargets_SingleLineTrace.h"
+#include "Interaction/Tasks/AbilityTask_WaitForInteractableTargets_SingleLineTrace.h"
 #include "Interaction/InteractionStatics.h"
 #include "DrawDebugHelpers.h"
 #include "Engine/World.h"

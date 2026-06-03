@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraWorldSettings.h"
+#include "GameModes/LyraWorldSettings.h"
 #include "GameFramework/PlayerStart.h"
 #include "EngineUtils.h"
 #include "Misc/UObjectToken.h"

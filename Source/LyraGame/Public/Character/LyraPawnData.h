@@ -1,9 +1,9 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
+
 #include "LyraPawnData.generated.h"
 
 #define UE_API LYRAGAME_API
@@ -15,6 +15,7 @@ class ULyraCameraMode;
 class ULyraInputConfig;
 class UObject;
 
+
 /**
  * ULyraPawnData
  *
@@ -24,7 +25,7 @@ UCLASS(MinimalAPI, BlueprintType, Const, Meta = (DisplayName = "Lyra Pawn Data",
 class ULyraPawnData : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
-	
+
 public:
 
 	UE_API ULyraPawnData(const FObjectInitializer& ObjectInitializer);
@@ -35,21 +36,21 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Lyra|Pawn")
 	TSubclassOf<APawn> PawnClass;
 
-	// // Ability sets to grant to this pawn's ability system.
-	// UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Lyra|Abilities")
-	// TArray<TObjectPtr<ULyraAbilitySet>> AbilitySets;
-	//
-	// // What mapping of ability tags to use for actions taking by this pawn
-	// UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Lyra|Abilities")
-	// TObjectPtr<ULyraAbilityTagRelationshipMapping> TagRelationshipMapping;
-	//
-	// // Input configuration used by player controlled pawns to create input mappings and bind input actions.
-	// UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Lyra|Input")
-	// TObjectPtr<ULyraInputConfig> InputConfig;
-	//
-	// // Default camera mode used by player controlled pawns.
-	// UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Lyra|Camera")
-	// TSubclassOf<ULyraCameraMode> DefaultCameraMode;
+	// Ability sets to grant to this pawn's ability system.
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Lyra|Abilities")
+	TArray<TObjectPtr<ULyraAbilitySet>> AbilitySets;
+
+	// What mapping of ability tags to use for actions taking by this pawn
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Lyra|Abilities")
+	TObjectPtr<ULyraAbilityTagRelationshipMapping> TagRelationshipMapping;
+
+	// Input configuration used by player controlled pawns to create input mappings and bind input actions.
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Lyra|Input")
+	TObjectPtr<ULyraInputConfig> InputConfig;
+
+	// Default camera mode used by player controlled pawns.
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Lyra|Camera")
+	TSubclassOf<ULyraCameraMode> DefaultCameraMode;
 };
 
 #undef UE_API

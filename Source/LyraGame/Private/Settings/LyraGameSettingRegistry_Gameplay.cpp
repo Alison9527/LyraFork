@@ -1,12 +1,11 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameSettingRegistry.h"
-
+#include "Settings/LyraGameSettingRegistry.h"
+#include "Settings/CustomSettings/LyraSettingValueDiscrete_Language.h"
+#include "Settings/LyraSettingsLocal.h"
 #include "GameSettingCollection.h"
 #include "EditCondition/WhenPlayingAsPrimaryPlayer.h"
 #include "EditCondition/WhenPlatformHasTrait.h"
-#include "CustomSettings/LyraSettingValueDiscrete_Language.h"
-#include "LyraSettingsLocal.h"
 #include "GameSettingValueDiscreteDynamic.h"
 #include "Player/LyraLocalPlayer.h"
 #include "Replays/LyraReplaySubsystem.h"

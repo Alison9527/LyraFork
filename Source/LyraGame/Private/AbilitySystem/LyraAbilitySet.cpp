@@ -2,8 +2,8 @@
 
 
 #include "AbilitySystem/LyraAbilitySet.h"
+#include "AbilitySystem/LyraAbilitySystemComponent.h"
 #include "AbilitySystem/Abilities/LyraGameplayAbility.h"
-#include "LyraAbilitySystemComponent.h"
 #include "LyraLogChannels.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraAbilitySet)

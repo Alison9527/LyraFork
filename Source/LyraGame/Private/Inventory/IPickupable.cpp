@@ -1,9 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "IPickupable.h"
-
+#include "Inventory/IPickupable.h"
+#include "Inventory/LyraInventoryManagerComponent.h"
 #include "GameFramework/Actor.h"
-#include "LyraInventoryManagerComponent.h"
 #include "UObject/ScriptInterface.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(IPickupable)

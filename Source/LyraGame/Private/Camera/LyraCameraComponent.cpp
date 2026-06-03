@@ -2,11 +2,11 @@
 
 
 #include "Camera/LyraCameraComponent.h"
+#include "Camera/LyraCameraMode.h"
 #include "Engine/Canvas.h"
 #include "Engine/Engine.h"
 #include "GameFramework/Pawn.h"
 #include "GameFramework/PlayerController.h"
-#include "LyraCameraMode.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraCameraComponent)
 

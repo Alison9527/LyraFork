@@ -1,15 +1,14 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraPerformanceStatSubsystem.h"
-
+#include "Performance/LyraPerformanceStatSubsystem.h"
+#include "Performance/LyraPerformanceStatTypes.h"
+#include "Performance/LatencyMarkerModule.h"
 #include "Engine/Engine.h"
 #include "Engine/GameInstance.h"
 #include "Engine/NetConnection.h"
 #include "Engine/World.h"
 #include "GameFramework/PlayerState.h"
 #include "GameModes/LyraGameState.h"
-#include "Performance/LyraPerformanceStatTypes.h"
-#include "Performance/LatencyMarkerModule.h"
 #include "ProfilingDebugging/CsvProfiler.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraPerformanceStatSubsystem)

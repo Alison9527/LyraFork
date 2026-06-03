@@ -1,9 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "Replays/AsyncAction_QueryReplays.h"
-
+#include "Replays/LyraReplaySubsystem.h"
 #include "GameFramework/PlayerController.h"
-#include "LyraReplaySubsystem.h"
 #include "Templates/Greater.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(AsyncAction_QueryReplays)

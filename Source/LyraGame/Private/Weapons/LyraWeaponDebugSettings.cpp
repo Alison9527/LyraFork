@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraWeaponDebugSettings.h"
+#include "Weapons/LyraWeaponDebugSettings.h"
 #include "Misc/App.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraWeaponDebugSettings)

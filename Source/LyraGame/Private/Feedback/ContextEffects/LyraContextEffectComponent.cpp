@@ -1,11 +1,10 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 
-#include "LyraContextEffectComponent.h"
-
-#include "Engine/World.h"
-#include "LyraContextEffectsSubsystem.h"
+#include "Feedback/ContextEffects/LyraContextEffectComponent.h"
+#include "Feedback/ContextEffects/LyraContextEffectsSubsystem.h"
 #include "PhysicalMaterials/PhysicalMaterial.h"
+#include "Engine/World.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraContextEffectComponent)
 

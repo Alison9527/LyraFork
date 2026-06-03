@@ -1,11 +1,9 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraAssetManager.h"
-#include "LyraLogChannels.h"
-#include "LyraGameplayTags.h"
-#include "LyraGameData.h"
-#include "AbilitySystemGlobals.h"
+#include "System/LyraAssetManager.h"
+#include "System/LyraGameData.h"
 #include "Character/LyraPawnData.h"
+#include "LyraLogChannels.h"
 #include "Misc/App.h"
 #include "Stats/StatsMisc.h"
 #include "Engine/Engine.h"

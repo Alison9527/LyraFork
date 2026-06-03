@@ -2,8 +2,8 @@
 
 
 #include "AbilitySystem/Abilities/LyraAbilityCost_PlayerTagStack.h"
+#include "AbilitySystem/Abilities/LyraGameplayAbility.h"
 #include "GameFramework/Controller.h"
-#include "LyraGameplayAbility.h"
 #include "Player/LyraPlayerState.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraAbilityCost_PlayerTagStack)

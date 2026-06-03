@@ -1,12 +1,12 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 
-#include "AnimNotify_LyraContextEffects.h"
+#include "Feedback/ContextEffects/AnimNotify_LyraContextEffects.h"
 #include "Feedback/ContextEffects/LyraContextEffectsLibrary.h"
-#include "LyraContextEffectsInterface.h"
+#include "Feedback/ContextEffects/LyraContextEffectsInterface.h"
+#include "Feedback/ContextEffects/LyraContextEffectsSubsystem.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/World.h"
-#include "LyraContextEffectsSubsystem.h"
 #include "NiagaraFunctionLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "NiagaraSystem.h"

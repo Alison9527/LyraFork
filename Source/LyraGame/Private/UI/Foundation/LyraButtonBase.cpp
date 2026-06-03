@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraButtonBase.h"
+#include "UI/Foundation/LyraButtonBase.h"
 #include "CommonActionWidget.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraButtonBase)

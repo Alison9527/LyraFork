@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "AbilityTask_GrantNearbyInteraction.h"
-
+#include "Interaction/Tasks/AbilityTask_GrantNearbyInteraction.h"
 #include "AbilitySystemComponent.h"
 #include "Engine/OverlapResult.h"
 #include "Engine/World.h"

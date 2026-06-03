@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraWidgetFactory_Class.h"
-
+#include "UI/Common/LyraWidgetFactory_Class.h"
 #include "Blueprint/UserWidget.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraWidgetFactory_Class)

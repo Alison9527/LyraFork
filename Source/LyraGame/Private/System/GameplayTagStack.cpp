@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "GameplayTagStack.h"
+#include "System/GameplayTagStack.h"
 
 #include "UObject/Stack.h"
 

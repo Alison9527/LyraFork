@@ -2,17 +2,15 @@
 
 #include "CommonInputBaseTypes.h"
 #include "EnhancedInputSubsystems.h"
-#include "CustomSettings/LyraSettingKeyboardInput.h"
-#include "DataSource/GameSettingDataSource.h"
 #include "EditCondition/WhenCondition.h"
 #include "GameSettingCollection.h"
 #include "GameSettingValueDiscreteDynamic.h"
 #include "GameSettingValueScalarDynamic.h"
-#include "LyraGameSettingRegistry.h"
-#include "LyraSettingsLocal.h"
-#include "LyraSettingsShared.h"
+#include "Settings/LyraGameSettingRegistry.h"
+#include "Settings/LyraSettingsLocal.h"
+#include "Settings/LyraSettingsShared.h"
+#include "Settings/CustomSettings/LyraSettingKeyboardInput.h"
 #include "Player/LyraLocalPlayer.h"
-#include "PlayerMappableInputConfig.h"
 
 class ULocalPlayer;
 

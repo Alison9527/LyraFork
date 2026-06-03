@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraCosmeticAnimationTypes.h"
-
+#include "Cosmetics/LyraCosmeticAnimationTypes.h"
 #include "Animation/AnimInstance.h"
 #include "Engine/SkeletalMesh.h"
 

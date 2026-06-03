@@ -1,11 +1,11 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraExperienceManagerComponent.h"
+#include "GameModes/LyraExperienceManagerComponent.h"
+#include "GameModes/LyraExperienceDefinition.h"
+#include "GameModes/LyraExperienceActionSet.h"
+#include "GameModes/LyraExperienceManager.h"
 #include "Engine/World.h"
 #include "Net/UnrealNetwork.h"
-#include "LyraExperienceDefinition.h"
-#include "LyraExperienceActionSet.h"
-#include "LyraExperienceManager.h"
 #include "GameFeaturesSubsystem.h"
 #include "System/LyraAssetManager.h"
 #include "GameFeatureAction.h"

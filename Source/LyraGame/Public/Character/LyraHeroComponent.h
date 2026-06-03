@@ -1,13 +1,11 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "Components/GameFrameworkInitStateInterface.h"
 #include "Components/PawnComponent.h"
-// #include "GameFeatures/GameFeatureAction_AddInputContextMapping.h"
+#include "GameFeatures/GameFeatureAction_AddInputContextMapping.h"
 #include "GameplayAbilitySpecHandle.h"
-#include "Components/PawnComponent.h"
 #include "LyraHeroComponent.generated.h"
 
 #define UE_API LYRAGAME_API
@@ -31,10 +29,10 @@ struct FInputActionValue;
  * This depends on a PawnExtensionComponent to coordinate initialization.
  */
 UCLASS(MinimalAPI, Blueprintable, Meta=(BlueprintSpawnableComponent))
-class ULyraHeroComponent : public UPawnComponent
+class ULyraHeroComponent : public UPawnComponent, public IGameFrameworkInitStateInterface
 {
 	GENERATED_BODY()
-	
+
 public:
 
 	UE_API ULyraHeroComponent(const FObjectInitializer& ObjectInitializer);
@@ -65,11 +63,11 @@ public:
 	static UE_API const FName NAME_ActorFeatureName;
 
 	//~ Begin IGameFrameworkInitStateInterface interface
-	// virtual FName GetFeatureName() const override { return NAME_ActorFeatureName; }
-	// UE_API virtual bool CanChangeInitState(UGameFrameworkComponentManager* Manager, FGameplayTag CurrentState, FGameplayTag DesiredState) const override;
-	// UE_API virtual void HandleChangeInitState(UGameFrameworkComponentManager* Manager, FGameplayTag CurrentState, FGameplayTag DesiredState) override;
-	// UE_API virtual void OnActorInitStateChanged(const FActorInitStateChangedParams& Params) override;
-	// UE_API virtual void CheckDefaultInitialization() override;
+	virtual FName GetFeatureName() const override { return NAME_ActorFeatureName; }
+	UE_API virtual bool CanChangeInitState(UGameFrameworkComponentManager* Manager, FGameplayTag CurrentState, FGameplayTag DesiredState) const override;
+	UE_API virtual void HandleChangeInitState(UGameFrameworkComponentManager* Manager, FGameplayTag CurrentState, FGameplayTag DesiredState) override;
+	UE_API virtual void OnActorInitStateChanged(const FActorInitStateChangedParams& Params) override;
+	UE_API virtual void CheckDefaultInitialization() override;
 	//~ End IGameFrameworkInitStateInterface interface
 
 protected:
@@ -93,12 +91,12 @@ protected:
 
 protected:
 	
-	// UPROPERTY(EditAnywhere)
-	// TArray<FInputMappingContextAndPriority> DefaultInputMappings;
-	//
-	// /** Camera mode set by an ability. */
-	// UPROPERTY()
-	// TSubclassOf<ULyraCameraMode> AbilityCameraMode;
+	UPROPERTY(EditAnywhere)
+	TArray<FInputMappingContextAndPriority> DefaultInputMappings;
+	
+	/** Camera mode set by an ability. */
+	UPROPERTY()
+	TSubclassOf<ULyraCameraMode> AbilityCameraMode;
 
 	/** Spec handle for the last ability to set a camera mode. */
 	FGameplayAbilitySpecHandle AbilityCameraModeOwningSpecHandle;

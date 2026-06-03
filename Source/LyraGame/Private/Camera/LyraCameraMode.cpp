@@ -5,8 +5,8 @@
 #include "Components/CapsuleComponent.h"
 #include "Engine/Canvas.h"
 #include "GameFramework/Character.h"
-#include "LyraCameraComponent.h"
-#include "LyraPlayerCameraManager.h"
+#include "Camera/LyraCameraComponent.h"
+#include "Camera/LyraPlayerCameraManager.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraCameraMode)
 
@@ -462,5 +462,3 @@ void ULyraCameraModeStack::GetBlendInfo(float& OutWeightOfTopLayer, FGameplayTag
 		OutTagOfTopLayer = TopEntry->GetCameraTypeTag();
 	}
 }
-
-

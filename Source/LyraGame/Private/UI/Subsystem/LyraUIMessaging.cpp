@@ -1,13 +1,10 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraUIMessaging.h"
-
+#include "UI/Subsystem/LyraUIMessaging.h"
 #include "Messaging/CommonGameDialog.h"
 #include "NativeGameplayTags.h"
 #include "CommonLocalPlayer.h"
 #include "PrimaryGameLayout.h"
-#include "Widgets/CommonActivatableWidgetContainer.h"
-
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraUIMessaging)
 
 class FSubsystemCollectionBase;

@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraVerbMessageReplication.h"
-
+#include "Messages/LyraVerbMessageReplication.h"
 #include "GameFramework/GameplayMessageSubsystem.h"
 #include "Messages/LyraVerbMessage.h"
 

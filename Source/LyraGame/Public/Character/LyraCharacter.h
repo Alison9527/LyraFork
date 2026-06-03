@@ -1,15 +1,14 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "ModularCharacter.h"
 #include "AbilitySystemInterface.h"
 #include "GameplayCueInterface.h"
 #include "GameplayTagAssetInterface.h"
-// #include "Teams/LyraTeamAgentInterface.h"
-#include "LyraCharacter.generated.h"
+#include "ModularCharacter.h"
+#include "Teams/LyraTeamAgentInterface.h"
 
+#include "LyraCharacter.generated.h"
 
 #define UE_API LYRAGAME_API
 
@@ -29,6 +28,7 @@ class UObject;
 struct FFrame;
 struct FGameplayTag;
 struct FGameplayTagContainer;
+
 
 /**
  * FLyraReplicatedAcceleration: Compressed representation of acceleration
@@ -95,13 +95,13 @@ struct TStructOpsTypeTraits<FSharedRepMovement> : public TStructOpsTypeTraitsBas
  *	New behavior should be added via pawn components when possible.
  */
 UCLASS(MinimalAPI, Config = Game, Meta = (ShortTooltip = "The base character pawn class used by this project."))
-class ALyraCharacter : public AModularCharacter //public IAbilitySystemInterface, public IGameplayCueInterface, public IGameplayTagAssetInterface
+class ALyraCharacter : public AModularCharacter, public IAbilitySystemInterface, public IGameplayCueInterface, public IGameplayTagAssetInterface, public ILyraTeamAgentInterface
 {
 	GENERATED_BODY()
-	
+
 public:
 
-	// UE_API ALyraCharacter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
+	UE_API ALyraCharacter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
 	UFUNCTION(BlueprintCallable, Category = "Lyra|Character")
 	UE_API ALyraPlayerController* GetLyraPlayerController() const;
@@ -110,13 +110,13 @@ public:
 	UE_API ALyraPlayerState* GetLyraPlayerState() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Lyra|Character")
-	// UE_API ULyraAbilitySystemComponent* GetLyraAbilitySystemComponent() const;
-	// UE_API virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+	UE_API ULyraAbilitySystemComponent* GetLyraAbilitySystemComponent() const;
+	UE_API virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
-	// UE_API virtual void GetOwnedGameplayTags(FGameplayTagContainer& TagContainer) const override;
-	// UE_API virtual bool HasMatchingGameplayTag(FGameplayTag TagToCheck) const override;
-	// UE_API virtual bool HasAllMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const override;
-	// UE_API virtual bool HasAnyMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const override;
+	UE_API virtual void GetOwnedGameplayTags(FGameplayTagContainer& TagContainer) const override;
+	UE_API virtual bool HasMatchingGameplayTag(FGameplayTag TagToCheck) const override;
+	UE_API virtual bool HasAllMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const override;
+	UE_API virtual bool HasAnyMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const override;
 
 	UE_API void ToggleCrouch();
 
@@ -134,9 +134,9 @@ public:
 	//~End of APawn interface
 
 	//~ILyraTeamAgentInterface interface
-	// UE_API virtual void SetGenericTeamId(const FGenericTeamId& NewTeamID) override;
-	// UE_API virtual FGenericTeamId GetGenericTeamId() const override;
-	// UE_API virtual FOnLyraTeamIndexChangedDelegate* GetOnTeamIndexChangedDelegate() override;
+	UE_API virtual void SetGenericTeamId(const FGenericTeamId& NewTeamID) override;
+	UE_API virtual FGenericTeamId GetGenericTeamId() const override;
+	UE_API virtual FOnLyraTeamIndexChangedDelegate* GetOnTeamIndexChangedDelegate() override;
 	//~End of ILyraTeamAgentInterface interface
 
 	/** RPCs that is called on frames when default property replication is skipped. This replicates a single movement update to everyone. */
@@ -191,41 +191,41 @@ protected:
 
 private:
 
-	// UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Lyra|Character", Meta = (AllowPrivateAccess = "true"))
-	// TObjectPtr<ULyraPawnExtensionComponent> PawnExtComponent;
-	//
-	// UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Lyra|Character", Meta = (AllowPrivateAccess = "true"))
-	// TObjectPtr<ULyraHealthComponent> HealthComponent;
-	//
-	// UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Lyra|Character", Meta = (AllowPrivateAccess = "true"))
-	// TObjectPtr<ULyraCameraComponent> CameraComponent;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Lyra|Character", Meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<ULyraPawnExtensionComponent> PawnExtComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Lyra|Character", Meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<ULyraHealthComponent> HealthComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Lyra|Character", Meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<ULyraCameraComponent> CameraComponent;
 
 	UPROPERTY(Transient, ReplicatedUsing = OnRep_ReplicatedAcceleration)
 	FLyraReplicatedAcceleration ReplicatedAcceleration;
 
-	// UPROPERTY(ReplicatedUsing = OnRep_MyTeamID)
-	// FGenericTeamId MyTeamID;
-	//
-	// UPROPERTY()
-	// FOnLyraTeamIndexChangedDelegate OnTeamChangedDelegate;
+	UPROPERTY(ReplicatedUsing = OnRep_MyTeamID)
+	FGenericTeamId MyTeamID;
+
+	UPROPERTY()
+	FOnLyraTeamIndexChangedDelegate OnTeamChangedDelegate;
 
 protected:
-	// // Called to determine what happens to the team ID when possession ends
-	// virtual FGenericTeamId DetermineNewTeamAfterPossessionEnds(FGenericTeamId OldTeamID) const
-	// {
-	// 	// This could be changed to return, e.g., OldTeamID if you want to keep it assigned afterwards, or return an ID for some neutral faction, or etc...
-	// 	return FGenericTeamId::NoTeam;
-	// }
+	// Called to determine what happens to the team ID when possession ends
+	virtual FGenericTeamId DetermineNewTeamAfterPossessionEnds(FGenericTeamId OldTeamID) const
+	{
+		// This could be changed to return, e.g., OldTeamID if you want to keep it assigned afterwards, or return an ID for some neutral faction, or etc...
+		return FGenericTeamId::NoTeam;
+	}
 
 private:
-	// UFUNCTION()
-	// UE_API void OnControllerChangedTeam(UObject* TeamAgent, int32 OldTeam, int32 NewTeam);
+	UFUNCTION()
+	UE_API void OnControllerChangedTeam(UObject* TeamAgent, int32 OldTeam, int32 NewTeam);
 
 	UFUNCTION()
 	UE_API void OnRep_ReplicatedAcceleration();
 
-	// UFUNCTION()
-	// UE_API void OnRep_MyTeamID(FGenericTeamId OldTeamID);
+	UFUNCTION()
+	UE_API void OnRep_MyTeamID(FGenericTeamId OldTeamID);
 };
 
 #undef UE_API

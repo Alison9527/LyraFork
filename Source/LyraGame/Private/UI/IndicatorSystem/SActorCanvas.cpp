@@ -1,13 +1,12 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "SActorCanvas.h"
-
-#include "Engine/GameViewportClient.h"
-#include "IActorIndicatorWidget.h"
-#include "Layout/ArrangedChildren.h"
-#include "LyraIndicatorManagerComponent.h"
-#include "SceneView.h"
+#include "UI/IndicatorSystem/SActorCanvas.h"
+#include "UI/IndicatorSystem/LyraIndicatorManagerComponent.h"
 #include "UI/IndicatorSystem/IndicatorDescriptor.h"
+#include "UI/IndicatorSystem/IActorIndicatorWidget.h"
+#include "Engine/GameViewportClient.h"
+#include "Layout/ArrangedChildren.h"
+#include "SceneView.h"
 #include "Widgets/Layout/SBox.h"
 #include "Widgets/SLeafWidget.h"
 

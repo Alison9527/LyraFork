@@ -1,8 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "MaterialProgressBar.h"
-
-#include "Animation/WidgetAnimation.h"
+#include "UI/Basic/MaterialProgressBar.h"
 #include "Components/Image.h"
 #include "Materials/MaterialInstanceDynamic.h"
 

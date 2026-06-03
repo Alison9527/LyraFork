@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "SHitMarkerConfirmationWidget.h"
-
+#include "UI/Weapons/SHitMarkerConfirmationWidget.h"
 #include "Weapons/LyraWeaponStateComponent.h"
 
 class FPaintArgs;

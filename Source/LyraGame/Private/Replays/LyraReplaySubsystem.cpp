@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraReplaySubsystem.h"
+#include "Replays/LyraReplaySubsystem.h"
 #include "Engine/GameInstance.h"
 #include "Engine/World.h"
 #include "Engine/DemoNetDriver.h"

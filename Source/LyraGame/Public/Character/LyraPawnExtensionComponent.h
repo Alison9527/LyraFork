@@ -1,9 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Components/GameFrameworkInitStateInterface.h"
 #include "Components/PawnComponent.h"
+
 #include "LyraPawnExtensionComponent.generated.h"
 
 #define UE_API LYRAGAME_API
@@ -23,10 +24,10 @@ struct FGameplayTag;
  * This coordinates the initialization of other components.
  */
 UCLASS(MinimalAPI)
-class ULyraPawnExtensionComponent : public UPawnComponent
+class ULyraPawnExtensionComponent : public UPawnComponent, public IGameFrameworkInitStateInterface
 {
 	GENERATED_BODY()
-	
+
 public:
 
 	UE_API ULyraPawnExtensionComponent(const FObjectInitializer& ObjectInitializer);
@@ -35,11 +36,11 @@ public:
 	static UE_API const FName NAME_ActorFeatureName;
 
 	//~ Begin IGameFrameworkInitStateInterface interface
-	// virtual FName GetFeatureName() const override { return NAME_ActorFeatureName; }
-	// UE_API virtual bool CanChangeInitState(UGameFrameworkComponentManager* Manager, FGameplayTag CurrentState, FGameplayTag DesiredState) const override;
-	// UE_API virtual void HandleChangeInitState(UGameFrameworkComponentManager* Manager, FGameplayTag CurrentState, FGameplayTag DesiredState) override;
-	// UE_API virtual void OnActorInitStateChanged(const FActorInitStateChangedParams& Params) override;
-	// UE_API virtual void CheckDefaultInitialization() override;
+	virtual FName GetFeatureName() const override { return NAME_ActorFeatureName; }
+	UE_API virtual bool CanChangeInitState(UGameFrameworkComponentManager* Manager, FGameplayTag CurrentState, FGameplayTag DesiredState) const override;
+	UE_API virtual void HandleChangeInitState(UGameFrameworkComponentManager* Manager, FGameplayTag CurrentState, FGameplayTag DesiredState) override;
+	UE_API virtual void OnActorInitStateChanged(const FActorInitStateChangedParams& Params) override;
+	UE_API virtual void CheckDefaultInitialization() override;
 	//~ End IGameFrameworkInitStateInterface interface
 
 	/** Returns the pawn extension component if one exists on the specified actor. */
@@ -54,8 +55,8 @@ public:
 	UE_API void SetPawnData(const ULyraPawnData* InPawnData);
 
 	/** Gets the current ability system component, which may be owned by a different actor */
-	// UFUNCTION(BlueprintPure, Category = "Lyra|Pawn")
-	// ULyraAbilitySystemComponent* GetLyraAbilitySystemComponent() const { return AbilitySystemComponent; }
+	UFUNCTION(BlueprintPure, Category = "Lyra|Pawn")
+	ULyraAbilitySystemComponent* GetLyraAbilitySystemComponent() const { return AbilitySystemComponent; }
 
 	/** Should be called by the owning pawn to become the avatar of the ability system. */
 	UE_API void InitializeAbilitySystem(ULyraAbilitySystemComponent* InASC, AActor* InOwnerActor);
@@ -98,8 +99,8 @@ protected:
 	TObjectPtr<const ULyraPawnData> PawnData;
 
 	/** Pointer to the ability system component that is cached for convenience. */
-	// UPROPERTY(Transient)
-	// TObjectPtr<ULyraAbilitySystemComponent> AbilitySystemComponent;
+	UPROPERTY(Transient)
+	TObjectPtr<ULyraAbilitySystemComponent> AbilitySystemComponent;
 };
 
 #undef UE_API

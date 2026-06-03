@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "CircumferenceMarkerWidget.h"
+#include "UI/Weapons/CircumferenceMarkerWidget.h"
 
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(CircumferenceMarkerWidget)

@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraAimSensitivityData.h"
-
+#include "Input/LyraAimSensitivityData.h"
 #include "Settings/LyraSettingsShared.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraAimSensitivityData)

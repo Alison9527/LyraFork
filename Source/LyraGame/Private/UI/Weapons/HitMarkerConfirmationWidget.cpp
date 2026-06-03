@@ -1,9 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "HitMarkerConfirmationWidget.h"
-
+#include "UI/Weapons/HitMarkerConfirmationWidget.h"
+#include "UI/Weapons/SHitMarkerConfirmationWidget.h"
 #include "Blueprint/UserWidget.h"
-#include "SHitMarkerConfirmationWidget.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(HitMarkerConfirmationWidget)
 

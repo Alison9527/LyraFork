@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "Teams/LyraTeamAgentInterface.h"
-
 #include "LyraLogChannels.h"
 #include "UObject/ScriptInterface.h"
 
