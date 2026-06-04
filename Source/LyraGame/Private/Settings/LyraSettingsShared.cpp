@@ -1,10 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSettingsShared.h"
-
+#include "Settings/LyraSettingsShared.h"
 #include "Framework/Application/SlateApplication.h"
 #include "Internationalization/Culture.h"
-#include "Kismet/GameplayStatics.h"
 #include "Misc/App.h"
 #include "Misc/ConfigCacheIni.h"
 #include "Player/LyraLocalPlayer.h"

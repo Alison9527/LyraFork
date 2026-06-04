@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraTeamInfoBase.h"
-
+#include "Teams/LyraTeamInfoBase.h"
 #include "Engine/World.h"
 #include "Net/UnrealNetwork.h"
 #include "Teams/LyraTeamSubsystem.h"

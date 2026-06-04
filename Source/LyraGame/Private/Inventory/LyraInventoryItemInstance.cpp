@@ -1,10 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraInventoryItemInstance.h"
-
+#include "Inventory/LyraInventoryItemInstance.h"
 #include "Inventory/LyraInventoryItemDefinition.h"
 #include "Net/UnrealNetwork.h"
-
 #include "Iris/ReplicationSystem/ReplicationFragmentUtil.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraInventoryItemInstance)

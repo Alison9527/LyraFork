@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "GameFeatureAction_AddInputContextMapping.h"
+#include "GameFeatures/GameFeatureAction_AddInputContextMapping.h"
 #include "Components/GameFrameworkComponentManager.h"
 #include "Engine/GameInstance.h"
 #include "GameFramework/PlayerController.h"

@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "GameFeatureAction_AddAbilities.h"
+#include "GameFeatures/GameFeatureAction_AddAbilities.h"
 #include "Engine/GameInstance.h"
 #include "Components/GameFrameworkComponentManager.h"
 #include "AbilitySystem/LyraAbilitySystemComponent.h"

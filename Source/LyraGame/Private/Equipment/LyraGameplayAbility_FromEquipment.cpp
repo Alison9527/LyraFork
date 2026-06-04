@@ -1,7 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameplayAbility_FromEquipment.h"
-#include "LyraEquipmentInstance.h"
+#include "Equipment//LyraGameplayAbility_FromEquipment.h"
+#include "Equipment/LyraEquipmentInstance.h"
 #include "Inventory/LyraInventoryItemInstance.h"
 
 #if WITH_EDITOR

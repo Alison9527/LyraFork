@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraDevelopmentStatics.h"
+#include "System/LyraDevelopmentStatics.h"
 #include "AssetRegistry/ARFilter.h"
 #include "AssetRegistry/AssetData.h"
 #include "Development/LyraDeveloperSettings.h"

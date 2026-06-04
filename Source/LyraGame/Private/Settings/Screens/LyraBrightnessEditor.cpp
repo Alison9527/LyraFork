@@ -1,13 +1,12 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraBrightnessEditor.h"
-
+#include "Settings/Screens/LyraBrightnessEditor.h"
 #include "CommonButtonBase.h"
-#include "CommonRichTextBlock.h"
-#include "Components/WidgetSwitcher.h"
 #include "GameSettingValueScalar.h"
+#include "Components/WidgetSwitcher.h"
 #include "Settings/LyraSettingsLocal.h"
 #include "Widgets/Layout/SSafeZone.h"
+#include "CommonRichTextBlock.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraBrightnessEditor)
 

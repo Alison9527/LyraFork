@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraInventoryItemDefinition.h"
-
+#include "Inventory/LyraInventoryItemDefinition.h"
 #include "Templates/SubclassOf.h"
 #include "UObject/ObjectPtr.h"
 

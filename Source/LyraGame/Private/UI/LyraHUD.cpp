@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraHUD.h"
-
+#include "UI/LyraHUD.h"
 #include "AbilitySystemComponent.h"
 #include "AbilitySystemGlobals.h"
 #include "Async/TaskGraphInterfaces.h"

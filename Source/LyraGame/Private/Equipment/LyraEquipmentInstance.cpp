@@ -1,10 +1,9 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraEquipmentInstance.h"
-
+#include "Equipment/LyraEquipmentInstance.h"
+#include "Equipment/LyraEquipmentDefinition.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "GameFramework/Character.h"
-#include "LyraEquipmentDefinition.h"
 #include "Net/UnrealNetwork.h"
 
 #include "Iris/ReplicationSystem/ReplicationFragmentUtil.h"

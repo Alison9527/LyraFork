@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "GameFeatureAction_WorldActionBase.h"
-
+#include "GameFeatures/GameFeatureAction_WorldActionBase.h"
 #include "Engine/GameInstance.h"
 #include "Engine/World.h"
 

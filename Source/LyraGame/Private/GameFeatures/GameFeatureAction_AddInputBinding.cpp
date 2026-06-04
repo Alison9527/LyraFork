@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "GameFeatureAction_AddInputBinding.h"
+#include "GameFeatures/GameFeatureAction_AddInputBinding.h"
 #include "Components/GameFrameworkComponentManager.h"
 #include "Engine/GameInstance.h"
 #include "GameFramework/PlayerController.h"

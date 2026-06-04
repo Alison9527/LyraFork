@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraRangedWeaponInstance.h"
+#include "Weapons/LyraRangedWeaponInstance.h"
 #include "NativeGameplayTags.h"
 #include "GameFramework/Pawn.h"
 #include "GameFramework/CharacterMovementComponent.h"

@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSettingValueDiscrete_MobileFPSType.h"
-
+#include "Settings/CustomSettings/LyraSettingValueDiscrete_MobileFPSType.h"
 #include "Performance/LyraPerformanceSettings.h"
 #include "Settings/LyraSettingsLocal.h"
 

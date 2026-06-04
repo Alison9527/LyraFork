@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSettingValueDiscreteDynamic_AudioOutputDevice.h"
-
+#include "Settings/CustomSettings/LyraSettingValueDiscreteDynamic_AudioOutputDevice.h"
 #include "AudioDeviceNotificationSubsystem.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraSettingValueDiscreteDynamic_AudioOutputDevice)

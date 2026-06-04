@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSystemStatics.h"
+#include "System/LyraSystemStatics.h"
 #include "Engine/AssetManagerTypes.h"
 #include "Engine/Engine.h"
 #include "Engine/World.h"

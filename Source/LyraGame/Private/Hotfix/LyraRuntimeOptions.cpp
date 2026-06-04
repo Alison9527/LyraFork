@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraRuntimeOptions.h"
-
+#include "Hotfix/LyraRuntimeOptions.h"
 #include "UObject/Class.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraRuntimeOptions)

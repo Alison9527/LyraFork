@@ -4,7 +4,7 @@
 #include "Cosmetics/LyraCharacterPartTypes.h"
 #include "Cosmetics/LyraPawnComponent_CharacterParts.h"
 #include "GameFramework/CheatManagerDefines.h"
-#include "LyraCosmeticDeveloperSettings.h"
+#include "Cosmetics/LyraCosmeticDeveloperSettings.h"
 #include "GameFramework/Pawn.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraControllerComponent_CharacterParts)

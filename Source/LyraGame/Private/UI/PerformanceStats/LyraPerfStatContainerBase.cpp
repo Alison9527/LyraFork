@@ -1,9 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraPerfStatContainerBase.h"
-
+#include "UI/PerformanceStats/LyraPerfStatContainerBase.h"
+#include "UI/PerformanceStats/LyraPerfStatWidgetBase.h"
 #include "Blueprint/WidgetTree.h"
-#include "LyraPerfStatWidgetBase.h"
 #include "Settings/LyraSettingsLocal.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraPerfStatContainerBase)

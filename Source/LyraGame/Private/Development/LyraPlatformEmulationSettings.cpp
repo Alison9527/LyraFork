@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraPlatformEmulationSettings.h"
+#include "Development/LyraPlatformEmulationSettings.h"
 #include "CommonUIVisibilitySubsystem.h"
 #include "Engine/PlatformSettingsManager.h"
 #include "Misc/App.h"

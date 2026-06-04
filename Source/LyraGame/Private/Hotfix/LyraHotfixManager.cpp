@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraHotfixManager.h"
+#include "Hotfix/LyraHotfixManager.h"
 #include "UObject/UObjectIterator.h"
 #include "Engine/NetDriver.h"
 #include "DeviceProfiles/DeviceProfileManager.h"

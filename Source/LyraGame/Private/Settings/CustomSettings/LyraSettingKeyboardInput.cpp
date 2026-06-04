@@ -1,9 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSettingKeyboardInput.h"
-
+#include "Settings/CustomSettings/LyraSettingKeyboardInput.h"
 #include "EnhancedInputSubsystems.h"
-#include "../LyraSettingsLocal.h"
+#include "Settings/LyraSettingsLocal.h"
 #include "Player/LyraLocalPlayer.h"
 #include "PlayerMappableInputConfig.h"
 #include "EnhancedInputSubsystems.h"

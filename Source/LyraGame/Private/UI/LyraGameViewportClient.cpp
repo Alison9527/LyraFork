@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameViewportClient.h"
+#include "UI/LyraGameViewportClient.h"
 
 #include "CommonUISettings.h"
 #include "ICommonUIModule.h"

@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameInstance.h"
-
+#include "System/LyraGameInstance.h"
 #include "CommonSessionSubsystem.h"
 #include "CommonUserSubsystem.h"
 #include "Components/GameFrameworkComponentManager.h"

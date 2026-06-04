@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraActionWidget.h"
-
+#include "UI/Foundation/LyraActionWidget.h"
 #include "CommonInputBaseTypes.h"
 #include "CommonInputSubsystem.h"
 #include "Engine/LocalPlayer.h"

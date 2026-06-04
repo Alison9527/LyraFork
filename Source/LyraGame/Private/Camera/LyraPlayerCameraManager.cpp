@@ -7,8 +7,8 @@
 #include "Engine/Engine.h"
 #include "GameFramework/Pawn.h"
 #include "GameFramework/PlayerController.h"
-#include "LyraCameraComponent.h"
-#include "LyraUICameraManagerComponent.h"
+#include "Camera/LyraCameraComponent.h"
+#include "Camera/LyraUICameraManagerComponent.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraPlayerCameraManager)
 
@@ -63,5 +63,3 @@ void ALyraPlayerCameraManager::DisplayDebug(UCanvas* Canvas, const FDebugDisplay
 		CameraComponent->DrawDebug(Canvas);
 	}
 }
-
-

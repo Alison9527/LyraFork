@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraNumberPopComponent.h"
+#include "Feedback/NumberPops/LyraNumberPopComponent.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraNumberPopComponent)
 

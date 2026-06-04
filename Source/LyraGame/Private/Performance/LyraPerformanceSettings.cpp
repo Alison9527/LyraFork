@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraPerformanceSettings.h"
-
+#include "Performance/LyraPerformanceSettings.h"
 #include "Engine/PlatformSettingsManager.h"
 #include "Misc/EnumRange.h"
 #include "Performance/LyraPerformanceStatTypes.h"

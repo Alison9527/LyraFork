@@ -1,12 +1,11 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraEquipmentManagerComponent.h"
-
+#include "Equipment/LyraEquipmentManagerComponent.h"
+#include "Equipment/LyraEquipmentDefinition.h"
+#include "Equipment/LyraEquipmentInstance.h"
 #include "AbilitySystem/LyraAbilitySystemComponent.h"
 #include "AbilitySystemGlobals.h"
 #include "Engine/ActorChannel.h"
-#include "LyraEquipmentDefinition.h"
-#include "LyraEquipmentInstance.h"
 #include "Net/UnrealNetwork.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraEquipmentManagerComponent)

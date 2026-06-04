@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSettingValueDiscrete_OverallQuality.h"
-
+#include "Settings/CustomSettings/LyraSettingValueDiscrete_OverallQuality.h"
 #include "Engine/Engine.h"
 #include "Settings/LyraSettingsLocal.h"
 

@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "GameFeatureAction_AddWidget.h"
+#include "GameFeatures/GameFeatureAction_AddWidget.h"
 #include "Components/GameFrameworkComponentManager.h"
 #include "Engine/GameInstance.h"
 #include "GameFeatures/GameFeatureAction_WorldActionBase.h"

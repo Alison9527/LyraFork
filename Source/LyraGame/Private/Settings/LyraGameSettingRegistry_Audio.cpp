@@ -1,15 +1,14 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "CustomSettings/LyraSettingValueDiscreteDynamic_AudioOutputDevice.h"
-#include "DataSource/GameSettingDataSource.h"
+#include "Settings/CustomSettings/LyraSettingValueDiscreteDynamic_AudioOutputDevice.h"
+#include "Settings/LyraGameSettingRegistry.h"
+#include "Settings/LyraSettingsLocal.h"
+#include "Settings/LyraSettingsShared.h"
 #include "EditCondition/WhenCondition.h"
 #include "EditCondition/WhenPlatformHasTrait.h"
 #include "EditCondition/WhenPlayingAsPrimaryPlayer.h"
 #include "GameSettingCollection.h"
 #include "GameSettingValueScalarDynamic.h"
-#include "LyraGameSettingRegistry.h"
-#include "LyraSettingsLocal.h"
-#include "LyraSettingsShared.h"
 #include "NativeGameplayTags.h"
 #include "Player/LyraLocalPlayer.h"
 

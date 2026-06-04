@@ -1,8 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 
-#include "LyraContextEffectsSubsystem.h"
-
+#include "Feedback/ContextEffects/LyraContextEffectsSubsystem.h"
 #include "Feedback/ContextEffects/LyraContextEffectsLibrary.h"
 #include "Feedback/ContextEffects/LyraContextEffectsSubsystem.h"
 #include "Kismet/GameplayStatics.h"

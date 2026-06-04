@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "GameFeatures/LyraGameFeaturePolicy.h"
-
 #include "AbilitySystem/LyraGameplayCueManager.h"
 #include "GameFeatureData.h"
 #include "GameplayCueSet.h"
@@ -81,7 +80,7 @@ void ULyraGameFeature_HotfixManager::OnGameFeatureLoading(const UGameFeatureData
 //
 
 #include "AbilitySystemGlobals.h"
-#include "GameFeatureAction_AddGameplayCuePath.h"
+#include "GameFeatures/GameFeatureAction_AddGameplayCuePath.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraGameFeaturePolicy)
 

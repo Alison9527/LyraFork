@@ -1,13 +1,13 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameMode.h"
+#include "GameModes/LyraGameMode.h"
 #include "AssetRegistry/AssetData.h"
 #include "Engine/GameInstance.h"
 #include "Engine/World.h"
 #include "LyraLogChannels.h"
 #include "Misc/CommandLine.h"
 #include "System/LyraAssetManager.h"
-#include "LyraGameState.h"
+#include "GameModes/LyraGameState.h"
 #include "System/LyraGameSession.h"
 #include "Player/LyraPlayerController.h"
 #include "Player/LyraPlayerBotController.h"

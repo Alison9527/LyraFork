@@ -68,8 +68,7 @@
 *	
 */
 
-#include "LyraReplicationGraph.h"
-
+#include "System/LyraReplicationGraph.h"
 #include "Net/UnrealNetwork.h"
 #include "Engine/LevelStreaming.h"
 #include "EngineUtils.h"
@@ -86,8 +85,7 @@
 #include "Engine/LevelScriptActor.h"
 #include "Engine/NetConnection.h"
 #include "UObject/UObjectIterator.h"
-
-#include "LyraReplicationGraphSettings.h"
+#include "System/LyraReplicationGraphSettings.h"
 #include "Character/LyraCharacter.h"
 #include "Player/LyraPlayerController.h"
 

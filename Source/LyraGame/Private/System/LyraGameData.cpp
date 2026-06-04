@@ -1,7 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameData.h"
-#include "LyraAssetManager.h"
+#include "System/LyraGameData.h"
+#include "System/LyraAssetManager.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraGameData)
 

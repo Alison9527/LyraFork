@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraTabButtonBase.h"
+#include "UI/Common/LyraTabButtonBase.h"
 
 #include "CommonLazyImage.h"
 #include "UI/Common/LyraTabListWidgetBase.h"

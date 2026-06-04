@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSettingScreen.h"
-
+#include "UI/LyraSettingScreen.h"
 #include "Input/CommonUIInputTypes.h"
 #include "Player/LyraLocalPlayer.h"
 #include "Settings/LyraGameSettingRegistry.h"

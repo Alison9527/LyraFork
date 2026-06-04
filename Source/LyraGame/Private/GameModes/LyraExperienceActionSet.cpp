@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraExperienceActionSet.h"
+#include "GameModes/LyraExperienceActionSet.h"
 #include "GameFeatureAction.h"
 
 #if WITH_EDITOR

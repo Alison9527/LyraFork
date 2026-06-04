@@ -1,9 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraNumberPopComponent_NiagaraText.h"
-
+#include "Feedback/NumberPops/LyraNumberPopComponent_NiagaraText.h"
 #include "Feedback/NumberPops/LyraNumberPopComponent.h"
-#include "LyraDamagePopStyleNiagara.h"
+#include "Feedback/NumberPops/LyraDamagePopStyleNiagara.h"
 #include "LyraLogChannels.h"
 #include "NiagaraComponent.h"
 #include "NiagaraDataInterfaceArrayFunctionLibrary.h"

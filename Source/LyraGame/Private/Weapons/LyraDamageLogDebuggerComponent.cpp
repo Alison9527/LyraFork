@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraDamageLogDebuggerComponent.h"
+#include "Weapons/LyraDamageLogDebuggerComponent.h"
 
 #include "Engine/World.h"
 #include "LyraLogChannels.h"
@@ -96,4 +96,3 @@ void ULyraDamageLogDebuggerComponent::OnDamageMessage(FGameplayTag Channel, cons
 		LogEntry.SumDamage += -Payload.Magnitude;
 	}
 }
-

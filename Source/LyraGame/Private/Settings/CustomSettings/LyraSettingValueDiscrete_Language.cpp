@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSettingValueDiscrete_Language.h"
-
+#include "Settings/CustomSettings/LyraSettingValueDiscrete_Language.h"
 #include "Internationalization/Culture.h"
 #include "Internationalization/TextLocalizationManager.h"
 #include "Messaging/CommonGameDialog.h"

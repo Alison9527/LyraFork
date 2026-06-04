@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "InventoryFragment_SetStats.h"
+#include "Inventory/InventoryFragment_SetStats.h"
 
 #include "Inventory/LyraInventoryItemInstance.h"
 

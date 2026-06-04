@@ -4,7 +4,6 @@
 
 #include "CommonActivatableWidget.h"
 #include "Widgets/IGameSettingActionInterface.h"
-
 #include "LyraBrightnessEditor.generated.h"
 
 enum class ECommonInputType : uint8;

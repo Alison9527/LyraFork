@@ -1,7 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraListView.h"
-#include "LyraWidgetFactory.h"
+#include "UI/Common/LyraListView.h"
+#include "UI/Common/LyraWidgetFactory.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraListView)
 

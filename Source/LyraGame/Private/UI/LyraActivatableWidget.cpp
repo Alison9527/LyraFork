@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraActivatableWidget.h"
+#include "UI/LyraActivatableWidget.h"
 
 #include "Editor/WidgetCompilerLog.h"
 

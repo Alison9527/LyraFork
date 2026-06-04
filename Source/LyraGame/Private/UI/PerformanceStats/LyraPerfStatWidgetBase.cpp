@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraPerfStatWidgetBase.h"
-
+#include "UI/PerformanceStats/LyraPerfStatWidgetBase.h"
 #include "Engine/GameInstance.h"
 #include "Performance/LyraPerformanceStatSubsystem.h"
 #include "Styling/CoreStyle.h"

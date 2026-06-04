@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSettingsLocal.h"
+#include "Settings/LyraSettingsLocal.h"
 #include "Engine/Engine.h"
 #include "Framework/Application/SlateApplication.h"
 #include "Engine/World.h"

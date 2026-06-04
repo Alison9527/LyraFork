@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameEngine.h"
+#include "System/LyraGameEngine.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraGameEngine)
 

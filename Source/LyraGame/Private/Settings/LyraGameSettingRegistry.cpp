@@ -1,10 +1,9 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameSettingRegistry.h"
-
+#include "Settings/LyraGameSettingRegistry.h"
 #include "GameSettingCollection.h"
-#include "LyraSettingsLocal.h"
-#include "LyraSettingsShared.h"
+#include "Settings/LyraSettingsLocal.h"
+#include "Settings/LyraSettingsShared.h"
 #include "Player/LyraLocalPlayer.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraGameSettingRegistry)

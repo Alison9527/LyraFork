@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraReticleWidgetBase.h"
-
+#include "UI/Weapons/LyraReticleWidgetBase.h"
 #include "Inventory/LyraInventoryItemInstance.h"
 #include "Weapons/LyraRangedWeaponInstance.h"
 #include "Weapons/LyraWeaponInstance.h"

@@ -4,7 +4,7 @@
 #include "Camera/LyraUICameraManagerComponent.h"
 #include "GameFramework/HUD.h"
 #include "GameFramework/PlayerController.h"
-#include "LyraPlayerCameraManager.h"
+#include "Camera/LyraPlayerCameraManager.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraUICameraManagerComponent)
 

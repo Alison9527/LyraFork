@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraConfirmationScreen.h"
+#include "UI/Foundation/LyraConfirmationScreen.h"
 
 #if WITH_EDITOR
 #include "CommonInputSettings.h"
@@ -12,7 +12,7 @@
 #include "CommonTextBlock.h"
 #include "Components/DynamicEntryBox.h"
 #include "ICommonInputModule.h"
-#include "LyraButtonBase.h"
+#include "UI/Foundation/LyraButtonBase.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraConfirmationScreen)
 

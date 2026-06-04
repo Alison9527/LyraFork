@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraBoundActionButton.h"
+#include "UI/Common/LyraBoundActionButton.h"
 
 #include "CommonInputSubsystem.h"
 #include "CommonInputTypeEnum.h"

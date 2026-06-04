@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraDeveloperSettings.h"
+#include "Development/LyraDeveloperSettings.h"
 #include "Misc/App.h"
 #include "Widgets/Notifications/SNotificationList.h"
 #include "Framework/Notifications/NotificationManager.h"
@@ -60,4 +60,3 @@ void ULyraDeveloperSettings::OnPlayInEditorStarted() const
 #endif
 
 #undef LOCTEXT_NAMESPACE
-

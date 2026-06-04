@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraTeamCheats.h"
-
+#include "Teams/LyraTeamCheats.h"
 #include "Engine/World.h"
 #include "GameFramework/PlayerController.h"
 #include "HAL/IConsoleManager.h"

@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraTaggedWidget.h"
+#include "UI/LyraTaggedWidget.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraTaggedWidget)
 

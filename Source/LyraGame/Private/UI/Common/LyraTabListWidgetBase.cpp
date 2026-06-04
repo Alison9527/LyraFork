@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraTabListWidgetBase.h"
-
+#include "UI/Common/LyraTabListWidgetBase.h"
 #include "CommonAnimatedSwitcher.h"
 #include "CommonButtonBase.h"
 

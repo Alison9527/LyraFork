@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraQuickBarComponent.h"
-
+#include "Equipment//LyraQuickBarComponent.h"
 #include "Equipment/LyraEquipmentDefinition.h"
 #include "Equipment/LyraEquipmentInstance.h"
 #include "Equipment/LyraEquipmentManagerComponent.h"

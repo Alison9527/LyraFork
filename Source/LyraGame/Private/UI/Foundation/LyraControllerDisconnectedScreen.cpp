@@ -1,11 +1,9 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraControllerDisconnectedScreen.h"
-
+#include "UI/Foundation/LyraControllerDisconnectedScreen.h"
 #include "Components/HorizontalBox.h"
 #include "CommonButtonBase.h"
 #include "CommonUISettings.h"
-#include "GameFramework/InputDeviceSubsystem.h"
 #include "GenericPlatform/GenericPlatformApplicationMisc.h"
 #include "GenericPlatform/GenericPlatformInputDeviceMapper.h"
 #include "ICommonUIModule.h"

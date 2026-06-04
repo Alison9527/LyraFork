@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraInputModifiers.h"
-
+#include "Input/LyraInputModifiers.h"
 #include "EnhancedPlayerInput.h"
 #include "GameFramework/PlayerController.h"
 #include "Input/LyraAimSensitivityData.h"

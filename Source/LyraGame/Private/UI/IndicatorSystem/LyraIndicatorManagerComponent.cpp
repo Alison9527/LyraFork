@@ -1,8 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraIndicatorManagerComponent.h"
-
-#include "IndicatorDescriptor.h"
+#include "UI/IndicatorSystem/LyraIndicatorManagerComponent.h"
+#include "UI/IndicatorSystem/IndicatorDescriptor.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraIndicatorManagerComponent)
 

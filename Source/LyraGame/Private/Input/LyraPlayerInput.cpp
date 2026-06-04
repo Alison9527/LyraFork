@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraPlayerInput.h"
+#include "Input/LyraPlayerInput.h"
 #include "Performance/LatencyMarkerModule.h"
 #include "Settings/LyraSettingsLocal.h"
 

@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "GameFeatureAction_SplitscreenConfig.h"
-
+#include "GameFeatures/GameFeatureAction_SplitscreenConfig.h"
 #include "Engine/GameInstance.h"
 #include "Engine/GameViewportClient.h"
 #include "GameFeatures/GameFeatureAction_WorldActionBase.h"

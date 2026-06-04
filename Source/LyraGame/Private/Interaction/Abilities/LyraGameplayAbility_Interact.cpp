@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameplayAbility_Interact.h"
-
+#include "Interaction/Abilities/LyraGameplayAbility_Interact.h"
 #include "AbilitySystemComponent.h"
 #include "Interaction/IInteractableTarget.h"
 #include "Interaction/InteractionStatics.h"

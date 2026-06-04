@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "UI/LyraJoystickWidget.h"
-
 #include "CommonHardwareVisibilityBorder.h"
 #include "Components/Image.h"
 

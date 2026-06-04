@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameState.h"
-
+#include "GameModes/LyraGameState.h"
 #include "AbilitySystem/LyraAbilitySystemComponent.h"
 #include "Async/TaskGraphInterfaces.h"
 #include "GameFramework/GameplayMessageSubsystem.h"

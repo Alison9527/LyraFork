@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSafeZoneEditor.h"
-
+#include "Settings/Screens/LyraSafeZoneEditor.h"
 #include "CommonButtonBase.h"
 #include "CommonRichTextBlock.h"
 #include "Components/WidgetSwitcher.h"

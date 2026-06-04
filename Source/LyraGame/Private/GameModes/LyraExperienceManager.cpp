@@ -1,6 +1,5 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraExperienceManager.h"
 #include "GameModes/LyraExperienceManager.h"
 #include "Engine/Engine.h"
 #include "Subsystems/SubsystemCollection.h"

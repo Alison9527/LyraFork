@@ -1,7 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraBotCreationComponent.h"
-#include "LyraGameMode.h"
+#include "GameModes/LyraBotCreationComponent.h"
+#include "GameModes/LyraGameMode.h"
 #include "Engine/World.h"
 #include "GameFramework/PlayerState.h"
 #include "GameModes/LyraExperienceManagerComponent.h"

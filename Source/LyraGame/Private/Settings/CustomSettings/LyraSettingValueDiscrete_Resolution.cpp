@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraSettingValueDiscrete_Resolution.h"
-
+#include "Settings/CustomSettings/LyraSettingValueDiscrete_Resolution.h"
 #include "Framework/Application/SlateApplication.h"
 #include "GameFramework/GameUserSettings.h"
 #include "RHI.h"

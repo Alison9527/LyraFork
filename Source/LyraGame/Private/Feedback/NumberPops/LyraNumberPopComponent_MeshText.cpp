@@ -1,13 +1,12 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraNumberPopComponent_MeshText.h"
-
+#include "Feedback/NumberPops/LyraNumberPopComponent_MeshText.h"
+#include "Feedback/NumberPops/LyraDamagePopStyle.h"
+#include "Feedback/NumberPops/LyraNumberPopComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Engine/CollisionProfile.h"
 #include "Engine/Engine.h"
 #include "Engine/World.h"
-#include "Feedback/NumberPops/LyraNumberPopComponent.h"
-#include "LyraDamagePopStyle.h"
 #include "Materials/MaterialInstanceDynamic.h"
 #include "TimerManager.h"
 #include "UObject/Package.h"

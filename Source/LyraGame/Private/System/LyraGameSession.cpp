@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameSession.h"
+#include "System/LyraGameSession.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraGameSession)
 

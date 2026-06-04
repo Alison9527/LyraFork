@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraTeamDisplayAsset.h"
-
+#include "Teams/LyraTeamDisplayAsset.h"
 #include "Components/MeshComponent.h"
 #include "NiagaraComponent.h"
 #include "Materials/MaterialInstanceDynamic.h"

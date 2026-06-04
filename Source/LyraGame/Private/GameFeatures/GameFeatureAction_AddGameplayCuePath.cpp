@@ -1,5 +1,5 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
-#include "GameFeatureAction_AddGameplayCuePath.h"
+#include "GameFeatures/GameFeatureAction_AddGameplayCuePath.h"
 
 #if WITH_EDITOR
 #include "Misc/DataValidation.h"

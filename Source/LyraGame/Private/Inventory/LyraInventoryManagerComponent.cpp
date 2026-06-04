@@ -1,12 +1,11 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraInventoryManagerComponent.h"
-
+#include "Inventory/LyraInventoryManagerComponent.h"
+#include "Inventory/LyraInventoryItemDefinition.h"
+#include "Inventory/LyraInventoryItemInstance.h"
 #include "Engine/ActorChannel.h"
 #include "Engine/World.h"
 #include "GameFramework/GameplayMessageSubsystem.h"
-#include "LyraInventoryItemDefinition.h"
-#include "LyraInventoryItemInstance.h"
 #include "NativeGameplayTags.h"
 #include "Net/UnrealNetwork.h"
 

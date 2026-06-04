@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraGameplayAbility_RangedWeapon.h"
+#include "Weapons/LyraGameplayAbility_RangedWeapon.h"
 #include "Weapons/LyraRangedWeaponInstance.h"
 #include "Physics/LyraCollisionChannels.h"
 #include "LyraLogChannels.h"

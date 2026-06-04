@@ -1,9 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraInputComponent.h"
-
+#include "Input/LyraInputComponent.h"
 #include "EnhancedInputSubsystems.h"
-#include "Player/LyraLocalPlayer.h"
 #include "Settings/LyraSettingsLocal.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraInputComponent)

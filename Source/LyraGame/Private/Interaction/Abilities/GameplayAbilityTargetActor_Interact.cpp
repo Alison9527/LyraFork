@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "GameplayAbilityTargetActor_Interact.h"
+#include "Interaction/Abilities/GameplayAbilityTargetActor_Interact.h"
 #include "Async/TaskGraphInterfaces.h"
 #include "DrawDebugHelpers.h"
 #include "CollisionQueryParams.h"

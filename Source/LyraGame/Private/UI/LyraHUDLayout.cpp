@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "LyraHUDLayout.h"
-
+#include "UI/LyraHUDLayout.h"
 #include "CommonUIExtensions.h"
 #include "CommonUISettings.h"
 #include "GameFramework/InputDeviceSubsystem.h"

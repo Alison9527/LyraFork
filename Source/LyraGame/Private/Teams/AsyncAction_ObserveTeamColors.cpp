@@ -1,7 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "Teams/AsyncAction_ObserveTeamColors.h"
-
 #include "Engine/Engine.h"
 #include "Engine/World.h"
 #include "Teams/LyraTeamAgentInterface.h"
