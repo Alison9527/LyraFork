@@ -271,6 +271,14 @@
 		{
 			"Name": "Reflex",
 			"Enabled": true
+		},
+		{
+			"Name": "ShooterCore",
+			"Enabled": true
+		},
+		{
+			"Name": "ShooterTests",
+			"Enabled": true
 		}
 	]
 }
