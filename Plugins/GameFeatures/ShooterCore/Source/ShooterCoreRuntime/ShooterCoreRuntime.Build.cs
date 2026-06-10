@@ -7,6 +7,8 @@ public class ShooterCoreRuntime : ModuleRules
 	public ShooterCoreRuntime(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+
+		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_7;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
@@ -26,7 +28,9 @@ public class ShooterCoreRuntime : ModuleRules
 			new string[]
 			{
 				"Core",
-				// ... add other public dependencies that you statically link with here ...
+				"LyraGame",
+				"ModularGameplay",
+				"CommonGame",
 			}
 			);
 			
@@ -38,6 +42,18 @@ public class ShooterCoreRuntime : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+				"GameplayTags",
+				"GameplayTasks",
+				"GameplayAbilities",
+				"GameplayMessageRuntime",
+				"CommonUI",
+				"UMG",
+				"DataRegistry",
+				"AsyncMixin",
+				"EnhancedInput",
+				"GameSubtitles",
+				"DeveloperSettings",
+				"AIModule"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
