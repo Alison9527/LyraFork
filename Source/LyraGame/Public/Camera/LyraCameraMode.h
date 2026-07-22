@@ -64,7 +64,7 @@ public:
  *
  *	Base class for all camera modes.
  */
-UCLASS(MinimalAPI, Abstract, NotBlueprintable)
+UCLASS(MinimalAPI, Abstract, NotBlueprintable, BlueprintType)
 class ULyraCameraMode : public UObject
 {
 	GENERATED_BODY()
