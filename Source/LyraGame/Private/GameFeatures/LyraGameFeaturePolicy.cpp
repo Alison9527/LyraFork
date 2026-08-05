@@ -153,6 +153,6 @@ void ULyraGameFeature_AddGameplayCuePaths::OnGameFeatureUnregistering(const UGam
 					GCM->InitializeRuntimeObjectLibrary();	
 				}			
 			}
-	}
+		}
 	}
 }
