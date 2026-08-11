@@ -35,7 +35,18 @@ UGameUIManagerSubsystem* UGameUIPolicy::GetOwningUIManager() const
 
 UWorld* UGameUIPolicy::GetWorld() const
 {
-	return GetOwningUIManager()->GetGameInstance()->GetWorld();
+	if (IsTemplate())
+	{
+		return nullptr;
+	}
+
+	if (const UGameUIManagerSubsystem* UIManager =
+		Cast<UGameUIManagerSubsystem>(GetOuter()))
+	{
+		return UIManager->GetGameInstance()->GetWorld();
+	}
+
+	return nullptr;
 }
 
 UPrimaryGameLayout* UGameUIPolicy::GetRootLayout(const UCommonLocalPlayer* LocalPlayer) const
