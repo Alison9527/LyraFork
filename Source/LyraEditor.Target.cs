@@ -7,11 +7,12 @@ public class LyraEditorTarget : TargetRules
 {
 	public LyraEditorTarget(TargetInfo Target) : base(Target)
 	{
-		DefaultBuildSettings = BuildSettingsVersion.V6;
+		DefaultBuildSettings = BuildSettingsVersion.V7;
 
 		Type = TargetType.Editor;
-		ExtraModuleNames.AddRange(new string[] { "LyraGame" });
-
+		// ExtraModuleNames.AddRange(new string[] { "LyraGame", "LyraEditor" });
+		ExtraModuleNames.AddRange(new string[] { "LyraGame"});
+		
 		if (!bBuildAllModules)
 		{
 			NativePointerMemberBehaviorOverride = PointerMemberBehavior.Disallow;

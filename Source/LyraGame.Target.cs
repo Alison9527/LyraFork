@@ -25,12 +25,13 @@ public class LyraGameTarget : TargetRules
 	{
 		ILogger Logger = Target.Logger;
 		
-		Target.DefaultBuildSettings = BuildSettingsVersion.V6;
+		Target.DefaultBuildSettings = BuildSettingsVersion.V7;
 		Target.IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 
 		bool bIsTest = Target.Configuration == UnrealTargetConfiguration.Test;
 		bool bIsShipping = Target.Configuration == UnrealTargetConfiguration.Shipping;
 		bool bIsDedicatedServer = Target.Type == TargetType.Server;
+		
 		if (Target.BuildEnvironment == TargetBuildEnvironment.Unique)
 		{
 			Target.CppCompileWarningSettings.ShadowVariableWarningLevel = WarningLevel.Error;

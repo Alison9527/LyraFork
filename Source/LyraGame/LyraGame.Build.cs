@@ -42,7 +42,7 @@ public class LyraGame : ModuleRules
 				"Niagara",
 				"AsyncMixin",
 				"ControlFlows",
-				"PropertyPath", "CommonLoadingScreen", "CommonLoadingScreen", "CommonLoadingScreen"
+				"PropertyPath"
 			}
 		);
 
@@ -73,7 +73,8 @@ public class LyraGame : ModuleRules
 				"AudioModulation",
 				"EngineSettings",
 				"DTLSHandlerComponent",
-				"Json", "GameplayMessageRuntime", "GameplayMessageRuntime",
+				"Json",
+			"PlatformDLC",
 			}
 		);
 
@@ -93,9 +94,19 @@ public class LyraGame : ModuleRules
 		{
 			PublicDefinitions.Add("WITH_RPC_REGISTRY=0");
 			PublicDefinitions.Add("WITH_HTTPSERVER_LISTENERS=0");
+			PublicDefinitions.Add("WITH_AUTOMATION_DRIVER=0");
 		}
 		else
 		{
+			if (!Target.bIsEngineInstalled)
+			{
+				PrivateDependencyModuleNames.Add("AutomationDriver");
+				PublicDefinitions.Add("WITH_AUTOMATION_DRIVER=1");
+			}
+			else
+			{
+				PublicDefinitions.Add("WITH_AUTOMATION_DRIVER=0");
+			}
 			PublicDefinitions.Add("WITH_RPC_REGISTRY=1");
 			PublicDefinitions.Add("WITH_HTTPSERVER_LISTENERS=1");
 		}
