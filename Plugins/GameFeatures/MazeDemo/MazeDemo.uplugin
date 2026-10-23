@@ -1,0 +1,41 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "MazeDemo",
+  "Description": "GameFeature 版的动态迷宫 Demo：运行时按确定性种子生成地形、重建导航并驱动 AI 巡逻。",
+  "Category": "Game Features",
+  "CreatedBy": "",
+  "CreatedByURL": "",
+  "DocsURL": "",
+  "MarketplaceURL": "",
+  "SupportURL": "",
+  "EnabledByDefault": false,
+  "CanContainContent": true,
+  "IsBetaVersion": false,
+  "IsExperimentalVersion": false,
+  "Installed": false,
+  "Modules": [
+    {
+      "Name": "MazeDemo",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ],
+  "ExplicitlyLoaded": true,
+  "BuiltInInitialFeatureState": "Inactive",
+  "Plugins": [
+    {
+      "Name": "GameplayAbilities",
+      "Enabled": true
+    },
+    {
+      "Name": "ModularGameplay",
+      "Enabled": true
+    },
+    {
+      "Name": "EnhancedInput",
+      "Enabled": true
+    }
+  ]
+}

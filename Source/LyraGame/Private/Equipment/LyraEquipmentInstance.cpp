@@ -5,7 +5,6 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "GameFramework/Character.h"
 #include "Net/UnrealNetwork.h"
-
 #include "Iris/ReplicationSystem/ReplicationFragmentUtil.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraEquipmentInstance)

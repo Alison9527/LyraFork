@@ -279,6 +279,10 @@
 		{
 			"Name": "ShooterTests",
 			"Enabled": true
+		},
+		{
+			"Name": "MazeDemo",
+			"Enabled": true
 		}
 	]
 }
