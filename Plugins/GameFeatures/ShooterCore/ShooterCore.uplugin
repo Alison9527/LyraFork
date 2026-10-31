@@ -60,6 +60,10 @@
     {
       "Name": "GameSubtitles",
       "Enabled": true
+    },
+    {
+      "Name": "LyraExampleContent",
+      "Enabled": true
     }
   ]
 }
