@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.8",
+	"EngineAssociation": "{E649D423-4B0C-D775-C6F2-3988A374398D}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -282,6 +282,10 @@
 		},
 		{
 			"Name": "MazeDemo",
+			"Enabled": true
+		},
+		{
+			"Name": "EnemyAI",
 			"Enabled": true
 		}
 	]
